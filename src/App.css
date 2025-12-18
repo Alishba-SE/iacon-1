@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,7 +40,7 @@
 
 .read-the-docs {
   color: #888;
-=======
+}
 /* Reset */
 * {
   margin: 0;
@@ -140,5 +140,5 @@
 
 .extra-links a:hover {
   text-decoration: underline;
->>>>>>> 65b2e1b6603d2877eb01666ae2c31eb0f0464374
+
 }
