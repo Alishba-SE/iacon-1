@@ -1,0 +1,38 @@
+.sidebar {
+  width: 230px;
+  height: 100vh;       /* add this */
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;      /* keep sidebar fixed */
+  left: 0;
+  top: 0;
+}
+
+
+.sidebar-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #4b4bc0;
+}

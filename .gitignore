@@ -22,8 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 node_modules
 build
 .env
 .env.local
 .env.production
+=======
+>>>>>>> 65b2e1b6603d2877eb01666ae2c31eb0f0464374

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,105 @@
 
 .read-the-docs {
   color: #888;
+=======
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App Layout */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f2f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Registration Page Wrapper */
+.registration-container {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.registration-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #222;
+}
+
+/* Input Groups */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group button {
+  padding: 12px 15px;
+  font-size: 16px;
+  background: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button-group button:hover {
+  background: #0056b3;
+}
+
+/* Extra Links */
+.extra-links {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.extra-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+>>>>>>> 65b2e1b6603d2877eb01666ae2c31eb0f0464374
 }

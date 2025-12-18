@@ -1,0 +1,261 @@
+/* ==========================
+   Student Profile Page Layout
+=========================== */
+.profile-layout {
+  margin-left: 230px;       /* space for sidebar */
+  display: flex;            /* IMPORTANT FIX */
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  width: calc(100% - 230px);
+  padding: 40px;
+  background: #f5f7fb;
+}
+
+
+/* ==========================
+   Profile Container
+=========================== */
+.profile-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;           /* <— changed from 130% */
+  max-width: 1000px;     /* optional: keeps it neat on large screens */
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+  .profile-layout {
+    padding: 20px;
+  }
+
+  .profile-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+
+/* ==========================
+   Header Section
+=========================== */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.profile-pic {
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.placeholder-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 16px;
+}
+
+.upload-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4c74af;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.upload-btn input {
+  display: none;
+}
+
+.download-btn {
+  background: #3aa357;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+.profile-details {
+  flex: 1;
+  min-width: 260px;
+}
+
+.profile-details h1 {
+  margin-bottom: 5px;
+  color: #2e3b55;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #4b6bfb;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.edit-btn,
+.save-btn {
+  background: #ffcc00;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+  background: #f0b800;
+}
+
+/* ==========================
+   Section Styles
+=========================== */
+.profile-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  color: #2e3b55;
+  font-size: 20px;
+}
+
+textarea,
+.edit-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  resize: none;
+  margin-top: 5px;
+}
+
+/* ==========================
+   Project Section
+=========================== */
+.add-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f9f9fc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.project-info h3 {
+  margin: 0;
+  color: #4b6bfb;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #4b6bfb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   Responsive Design
+=========================== */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic img,
+  .placeholder-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
